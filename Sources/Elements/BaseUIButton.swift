@@ -9,14 +9,13 @@ import UIKit
 open class BaseUIButton: UIButton {
     
 
-        
-        public convenience init(frame: CGRect) {
-            self.init(frame: zero)
+        public convenience init() {
+            self.init(frame: .zero)
             setupView()
         }
     
         public override init(frame: CGRect) {
-            super.init(frame: zero)
+            super.init(frame: frame)
             setupView()
         }
         
@@ -25,19 +24,15 @@ open class BaseUIButton: UIButton {
             setupView()
         }
         
-//       public override func awakeFromNib() {
-//            super.awakeFromNib()
-//            setupView()
-//        }
-        
         public override func awakeFromNib(){
             super.awakeFromNib()
-            setUpView()
+            setupView()
         }
         
 
     
-    open func setUpView(){
+    open func setupView(){
         translatesAutoresizingMaskIntoConstraints = false
     }
+    
 }
