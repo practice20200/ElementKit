@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class BaseUILabelView : UILabel{
+open class BaseUILabel : UILabel{
     
     public convenience init() {
         self.init(frame: .zero)
